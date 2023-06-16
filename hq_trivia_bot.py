@@ -2,8 +2,6 @@ import requests
 import asyncio
 import openai
 
-# Set up the Discord client
-client = discord.Client()
 
 # Set up the OpenAI API
 openai.api_key = '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'
