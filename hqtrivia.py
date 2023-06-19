@@ -1,16 +1,19 @@
+import discord
 import requests
 import asyncio
 import openai
 
+# Set up the Discord client
+client = discord.Client()
 
 # Set up the OpenAI API
-openai.api_key = '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'
+openai.api_key = 'OPENAI_API_KEY'
 
 # Set up the Google search URL
 GOOGLE_SEARCH_URL = 'https://www.google.com/search?q='
 
 # Replace 'YOUR_DISCORD_TOKEN' with your actual Discord bot token
-DISCORD_TOKEN = 'MTExODQ2MjYxMDQ2ODI0MTQyOA.GyoN5F.SKcg2Z6FPEXhjiu0FdKqRFWY3Azun1a9vN_zSA'
+DISCORD_TOKEN = 'YOUR_DISCORD_TOKEN'
 
 @client.event
 async def on_ready():
