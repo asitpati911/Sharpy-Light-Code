@@ -13,7 +13,7 @@ openai.api_key = 'OPENAI_API_KEY'
 GOOGLE_SEARCH_URL = 'https://www.google.com/search?q='
 
 # Replace 'YOUR_DISCORD_TOKEN' with your actual Discord bot token
-DISCORD_TOKEN = 'YOUR_DISCORD_TOKEN'
+DISCORD_TOKEN = 'DISCORD_TOKEN'
 
 @client.event
 async def on_ready():
