@@ -22,12 +22,44 @@ void setup()
 
 void loop()
 {
-digitdigitalWrite(in1, HIGH); //rotate motor in CW direction
-digitdigitalWrite(in2,LOW);
-analoanalogWrite(ENA, speed1);//rotate motor slow
-delaydelay(2000);
+  digitalWrite(in1, HIGH); //rotate motor in CW direction
+  digitalWrite(in2, LOW);
+  analogWrite(ENA, speed1);//rotate motor slow
+  delay(2000);
 
-digitalWrite (in1, LOW);
-digitalWrite(in2, HIGH);//rotate motor in CCW direction
-analogWrite(ENA, speed1);//rotate motor slow
+  digitalWrite (in1, LOW);
+  digitalWrite(in2, HIGH);//rotate motor in CCW direction
+  analogWrite(ENA, speed1);//rotate motor slow
+  delay(2000);
+
+  digitalWrite(in4, LOW); //rotate motor in CW direction
+  digitalWrite(in3, HIGH); 
+  analogWrite(ENB, speed1);//rotate motor slow
+  delay(2000);
+
+  digitalWrite(in3, LOW); //rotate motor in CCW direction 
+  digitalWrite(in4, HIGH); 
+  analogWrite(ENB, speed1);//rotate motor slow 
+  delay(2000);
+
+  digitalWrite(in1, HIGH); //rotate motor in CC direction 
+  digitalWrite(in2, LOW); 
+  analogWrite(ENA, speed2); //rotate motor fast 
+  delay(2000);
+
+digitalWrite(in1, LOW); 
+digitalWrite(in2, HIGH); //rotate motor in CCW direction
+analogWrite(ENA, speed2);//rotate motor fast
 delay(2000);
+
+digitalWrite(in3, HIGH); //rotate motor in CC direction
+digitalWrite(in4, HIGH);
+analogWrite(ENB, speed2);//rotate motor fast
+delay(2000);
+
+digitalWrite ( i n3,LOw) //rotate motor in CCW direction
+digitalWrite(in4, LOW);
+analogWrite(ENB, speed2);//rotate motor slow
+delay(2000);
+
+}
