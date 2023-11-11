@@ -20,7 +20,7 @@ void setup()
 
 }
 
-void void loop()
+void loop()
 {
 digitdigitalWrite(in1, HIGH); //rotate motor in CW direction
 digitdigitalWrite(in2,LOW);
