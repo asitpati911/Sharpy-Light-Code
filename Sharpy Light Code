@@ -1,0 +1,33 @@
+#define ENA 3 //ENA pin is connected to pin 3 on Arduino board
+#define in1 4 //in1 pin is connected to pin 4 on Arduino board
+#define in2 7 //in2 pin is connected to pin 7 on Arduino board
+#define ENB 9 //ENB pin is connected to pin 9 on Arduino board
+#define in3 13 //in3 pin is connected to pin 13 on Arduino board
+#define in4 12 //in4 pin is connected to pin 12 on Arduino board
+
+int speed1 = 150; //rotate motor slow
+int speed2 = 180; //rotate motor fast
+
+void setup()
+{
+  //set motor pins as output
+  pinMode (ENA, OUTPUT);
+  pinMode (in1, OUTPUT);
+  pinMode (in2, OUTPUT);
+  pinMode (ENB, OUTPUT);
+  pinMode (in3, OUTPUT);
+  pinMode (in4, OUTPUT);
+
+}
+
+void void loop()
+{
+digitdigitalWrite(in1, HIGH); //rotate motor in CW direction
+digitdigitalWrite(in2,LOW);
+analoanalogWrite(ENA, speed1);//rotate motor slow
+delaydelay(2000);
+
+digitalWrite (in1, LOW);
+digitalWrite(in2, HIGH);//rotate motor in CCW direction
+analogWrite(ENA, speed1);//rotate motor slow
+delay(2000);
