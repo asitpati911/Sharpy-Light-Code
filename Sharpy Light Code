@@ -47,19 +47,19 @@ void loop()
   analogWrite(ENA, speed2); //rotate motor fast 
   delay(2000);
 
-digitalWrite(in1, LOW); 
-digitalWrite(in2, HIGH); //rotate motor in CCW direction
-analogWrite(ENA, speed2);//rotate motor fast
-delay(2000);
+  digitalWrite(in1, LOW); 
+  digitalWrite(in2, HIGH); //rotate motor in CCW direction
+  analogWrite(ENA, speed2);//rotate motor fast
+  delay(2000);
 
-digitalWrite(in3, HIGH); //rotate motor in CC direction
-digitalWrite(in4, HIGH);
-analogWrite(ENB, speed2);//rotate motor fast
-delay(2000);
+  digitalWrite(in3, HIGH); //rotate motor in CC direction
+  digitalWrite(in4, HIGH);
+  analogWrite(ENB, speed2);//rotate motor fast
+  delay(2000);
 
-digitalWrite ( i n3,LOw) //rotate motor in CCW direction
-digitalWrite(in4, LOW);
-analogWrite(ENB, speed2);//rotate motor slow
-delay(2000);
+  digitalWrite ( i n3,LOw) //rotate motor in CCW direction
+  digitalWrite(in4, LOW);
+  analogWrite(ENB, speed2);//rotate motor slow
+  delay(2000);
 
 }
